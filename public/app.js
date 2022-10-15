@@ -23,4 +23,8 @@ function addTask(){
     tasksContainer.appendChild(createTask(input));
     input.value = '';
 }
+input.addEventListener("keydown", function(event){
+    if(event.key === 'Enter'){addTask()}
+});
+
 addBtn.onclick = addTask;
