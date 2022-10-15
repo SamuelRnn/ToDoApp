@@ -1,6 +1,5 @@
 const input = document.getElementById('toDoInput');
 const addBtn = document.getElementById('add');
-let taskId = 0;
 let taskList;
 
 function createTask(val){
@@ -10,8 +9,7 @@ function createTask(val){
     taskDiv.appendChild(taskDesc);
     taskDiv.className = 'task-div';
     taskDesc.className = 'task-description';
-    taskDiv.id = ++taskId;
-    taskDesc.innerHTML = val.value;
+    taskDesc.innerHTML = '> ' +val.value;
     taskDiv.onclick = function(){taskDiv.remove()}
     return taskDiv;
 }
