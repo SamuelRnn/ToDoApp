@@ -8,6 +8,8 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;1,300&display=swap" rel="stylesheet">  
 
     <link rel="preload" href="public/styles.css" as="style">
@@ -20,26 +22,38 @@
 <body>
     <div class="background-svg"></div>
 
-    <main class="main-container">
-        <h1>ToDo<span>App</span></h1>
-        <div class="app-container">
-            <div class="input-container">
-                <input type="text" id="toDoInput" placeholder='Any plans today?'>
-                <button id="add">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus" width="24" height="24" viewBox="0 0 24 24" stroke-width="3" stroke="#dedede" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <line x1="12" y1="5" x2="12" y2="19" />
-                        <line x1="5" y1="12" x2="19" y2="12" />
-                    </svg>
-                </button>
+    <div class="main-container">
+        <main class="glass-container">
+            <h1>ToDo<span>App</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-list-check" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M3.5 5.5l1.5 1.5l2.5 -2.5" />
+                    <path d="M3.5 11.5l1.5 1.5l2.5 -2.5" />
+                    <path d="M3.5 17.5l1.5 1.5l2.5 -2.5" />
+                    <line x1="11" y1="6" x2="20" y2="6" />
+                    <line x1="11" y1="12" x2="20" y2="12" />
+                    <line x1="11" y1="18" x2="20" y2="18" />
+                </svg>
+            </h1>
+            <div class="app-container">
+                <div class="input-container">
+                    <input type="text" id="toDoInput" placeholder='Any plans today?'>
+                    <button id="add">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus" width="24" height="24" viewBox="0 0 24 24" stroke-width="3" stroke="#dedede" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <line x1="12" y1="5" x2="12" y2="19" />
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="tasks-container"></div>
             </div>
-            <div class="tasks-container"></div>
-        </div>
-    </main>
-    <footer class="footer">
-        <p>Coded and designed by <a target="_blank" href="https://github.com/SamuelRnn">SamuelRnn</a>
-        </p>
-    </footer>
+        </main>
+        <footer class="footer">
+            <p>Coded and designed by <a target="_blank" href="https://github.com/SamuelRnn">SamuelRnn</a>
+            </p>
+        </footer>
+    </div>
     
     <script src="public/app.js" type="module"></script>
 </body>
